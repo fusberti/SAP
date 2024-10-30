@@ -3,14 +3,13 @@ package instances;
 import reliability.Reliability;
 
 import instances.networks.Network;
-import instances.networks.reductions.Reductions;
 
 public class Instance {
 	
 	public Network net;
 	public InstanceParameters parameters;
 	public Reliability reliability;
-	public Reductions reduce;
+	//public Reductions reduce;
 	
 	public Instance(String filename) {
 		
@@ -23,6 +22,5 @@ public class Instance {
 		reliability = new Reliability(this);
 		
 	}
-	
 
 }

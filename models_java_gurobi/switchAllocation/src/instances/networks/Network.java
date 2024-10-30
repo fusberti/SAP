@@ -113,10 +113,7 @@ public class Network {
 	    		
 	    		V node = iterNodes.next();
 	    		if (node.type == TYPES.SUBSTATION) {    		    	
-	    			// A mudanca abaixo eh para considerar que as arestas saindo da raiz para os alimentadores
-				// nao possuem protecao
-				//E edge = new E(g.getEdgeCount(),this.root,node,true,numProt++,-1);
-				E edge = new E(g.getEdgeCount(),this.root,node,false,-1,numNoProt++);
+	    			E edge = new E(g.getEdgeCount(),this.root,node,true,numProt++,-1);
 			    	this.mapEdgeIndex.put(g.getEdgeCount(),edge);
 			    	g.addEdge(edge,this.root,node,EdgeType.DIRECTED);
 	    		}
