@@ -1,6 +1,6 @@
 **Dependencies:**
 
-C++ dp algorithm: boost graph library.
+C++ dp algorithm: Boost graph library.
 
 Java Gurobi models: The Jung graph library and Gurobi. The jar file contains both the Jung and Gurobi jar library files, for using Gurobi a license is required.
 
